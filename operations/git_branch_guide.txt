@@ -1,0 +1,54 @@
+# Git 브랜치 작업 예시
+
+## 초기 설정
+
+```bash
+git init
+git add .
+git commit -m "initial commit"
+```
+
+## 덧셈 브랜치
+
+```bash
+git checkout -b feature/add
+git add .
+git commit -m "add addition feature"
+```
+
+## 뺄셈 브랜치
+
+```bash
+git checkout main
+git checkout -b feature/sub
+git add .
+git commit -m "add subtraction feature"
+```
+
+## 곱셈 브랜치
+
+```bash
+git checkout main
+git checkout -b feature/mul
+git add .
+git commit -m "add multiplication feature"
+```
+
+## 나눗셈 브랜치
+
+```bash
+git checkout main
+git checkout -b feature/div
+git add .
+git commit -m "add division feature"
+```
+
+## Merge
+
+```bash
+git checkout main
+git merge feature/add
+git merge feature/sub
+git merge feature/mul
+git merge feature/div
+```
